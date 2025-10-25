@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SanMovies - Twój portal filmowy</title>
+    
+    <style>
+        
+
+    </style>
+</head>
+<body>
+
+    <!-- NAGŁÓWEK -->
+    <header class="header-sticky">
+        <!-- Główny pasek nawigacyjny (Logo + Wyszukiwarka) -->
+        <nav class="container main-nav">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                SanMovies
+            </a>
+            
+            <!-- Wyszukiwarka -->
+            <div class="search-bar">
+                <input 
+                    type="text" 
+                    placeholder="Szukaj filmów, seriali..." 
+                    class="search-input"
+                >
+                <button class="search-button">
+                    <!-- Ikona lupy (SVG) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Pasek gatunków -->
+        <nav class="genre-nav">
+            <ul class="container genre-list">
+                <li><a href="#" class="genre-link">Akcja</a></li>
+                <li><a href="#" class="genre-link">Komedia</a></li>
+                <li><a href="#" class="genre-link">Dramat</a></li>
+                <li><a href="#" class="genre-link">Sci-Fi</a></li>
+                <li><a href="#" class="genre-link">Horror</a></li>
+                <li><a href="#" class="genre-link">Romans</a></li>
+                <li><a href="#" class="genre-link">Thriller</a></li>
+                <li><a href="#" class="genre-link">Animacja</a></li>
+                <li><a href="#" class="genre-link">Dokument</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- GŁÓWNA ZAWARTOŚĆ -->
+    <main class="container main-content">
+        
+        <h2 class="section-title">Polecane filmy</h2>
+
+        <!-- Siatka filmów -->
+        <div class="movie-grid">
+
+            <!-- Przykładowy kafelek filmu 1 -->
+            <div class="movie-card aspect-poster">
+                <!-- Tło (Plakat) z efektem przybliżenia -->
+                <div 
+                    class="movie-poster"
+                    style="background-image: url('https://placehold.co/400x600/FF6347/FFFFFF?text=Poster+1');"
+                    onerror="this.style.backgroundImage='url(\'https://placehold.co/400x600/FF6347/FFFFFF?text=Brak+Plakatu\')'"
+                ></div>
+                
+                <!-- Nakładka z gradientem dla czytelności tekstu -->
+                <div class="poster-gradient"></div>
+                
+                <!-- Tytuł filmu -->
+                <h3 class="movie-title">
+                    Tytuł Filmu Pierwszego
+                </h3>
+            </div>
+
+            <!-- Przykładowy kafelek filmu 2 -->
+            <div class="movie-card aspect-poster">
+                <div 
+                    class="movie-poster"
+                    style="background-image: url('https://placehold.co/400x600/4169E1/FFFFFF?text=Poster+2');"
+                    onerror="this.style.backgroundImage='url(\'https://placehold.co/400x600/4169E1/FFFFFF?text=Brak+Plakatu\')'"
+                ></div>
+                <div class="poster-gradient"></div>
+                <h3 class="movie-title">
+                    Bardzo Długi Tytuł Filmu Drugiego
+                </h3>
+            </div>
+
+            <!-- Przykładowy kafelek filmu 3 -->
+            <div class="movie-card aspect-poster">
+                <div 
+                    class="movie-poster"
+                    style="background-image: url('https://placehold.co/400x600/32CD32/FFFFFF?text=Poster+3');"
+                    onerror="this.style.backgroundImage='url(\'https://placehold.co/400x600/32CD32/FFFFFF?text=Brak+Plakatu\')'"
+                ></div>
+                <div class="poster-gradient"></div>
+                <h3 class="movie-title">
+                    Trzeci Film
+                </h3>
+            </div>
+
+            <!-- Przykładowy kafelek filmu 4 -->
+            <div class="movie-card aspect-poster">
+                <div 
+                    class="movie-poster"
+                    style="background-image: url('https://placehold.co/400x600/FFD700/000000?text=Poster+4');"
+                    onerror="this.style.backgroundImage='url(\'https://placehold.co/400x600/FFD700/000000?text=Brak+Plakatu\')'"
+                ></div>
+                <div class="poster-gradient"></div>
+                <h3 class="movie-title">
+                    Czwarty
+                </h3>
+            </div>
+
+            <!-- Przykładowy kafelek filmu 5 -->
+            <div class="movie-card aspect-poster">
+                <div 
+                    class="movie-poster"
+                    style="background-image: url('https://placehold.co/400x600/BA55D3/FFFFFF?text=Poster+5');"
+                    onerror="this.style.backgroundImage='url(\'https://placehold.co/400x600/BA55D3/FFFFFF?text=Brak+Plakatu\')'"
+                ></div>
+                <div class="poster-gradient"></div>
+                <h3 class="movie-title">
+                    Super Produkcja
+                </h3>
+            </div>
+
+            <!-- Przykładowy kafelek filmu 6 -->
+            <div class="movie-card aspect-poster">
+                <div 
+                    class="movie-poster"
+                    style="background-image: url('https://placehold.co/400x600/1E90FF/FFFFFF?text=Poster+6');"
+                    onerror="this.style.backgroundImage='url(\'https://placehold.co/400x600/1E90FF/FFFFFF?text=Brak+Plakatu\')'"
+                ></div>
+                <div class="poster-gradient"></div>
+                <h3 class="movie-title">
+                    Film numer Sześć
+                </h3>
+            </div>
+            
+            <!-- Dodaj więcej kafelków w razie potrzeby -->
+            
+        </div>
+
+    </main>
+
+    <!-- STOPKA -->
+    <footer class="footer">
+        <p>&copy; 2025 SanMovies. Wszelkie prawa zastrzeżone.</p>
+        <p class="footer-small">Strona jest projektem demonstracyjnym.</p>
+    </footer>
+
+</body>
+</html>
+

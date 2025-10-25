@@ -1,0 +1,33 @@
+﻿@page "/"
+@inject MovieService MovieService
+
+<h2>SanFlix</h2>
+<br />
+@if (isLoading)
+{
+    <div class="loader"></div>
+}
+
+@if(categories is not null && !isLoading)
+{
+    @foreach (var category in categories)
+    {
+        <h1>@category.Name</h1>
+    }
+}
+
+
+@code {
+
+    List<CategoryDto>? categories;
+    bool isLoading;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        isLoading = true;
+        categories = await MovieService.GetCategories();
+        isLoading = false;
+        StateHasChanged();
+    }
+}
